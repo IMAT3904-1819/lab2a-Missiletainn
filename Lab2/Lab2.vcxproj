@@ -75,10 +75,12 @@
     <IncludePath>\\vfiler1.lec-admin.dmu.ac.uk\Home1\P16158661\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\include;$(IncludePath)</IncludePath>
     <LibraryPath>\\vfiler1.lec-admin.dmu.ac.uk\Home1\P16158661\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\lib;$(LibraryPath)</LibraryPath>
     <SourcePath>\\vfiler1.lec-admin.dmu.ac.uk\Home1\P16158661\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\src;$(SourcePath)</SourcePath>
+    <OutDir>..\bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>H:\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\lib;H:\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\src;H:\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\include;$(IncludePath)</IncludePath>
+    <OutDir>..\bin</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -98,6 +100,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>\\vfiler1.lec-admin.dmu.ac.uk\Home1\P16158661\Documents\Game Engine Module\Github stuff\Lab2Github\Lab2\lib\glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
